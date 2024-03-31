@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#CE0C0C</color>
+
+    <color name="colorPrimary">#CE0C0C</color>
+    <color name="colorPrimaryDark">#940808</color>
+    <color name="colorAccent">#000000</color>
+    <color name="light_grey">#DBDBDB</color>
+    <color name="colorText">#FFFFFF</color>
+
+    <color name="circular_background">#CCCCCC
+    </color> <!-- Example: Light gray for circular background -->
+    <color name="rounded_button_bg">#FFC107
+    </color> <!-- Example: Yellow for rounded button background -->
+    <color name="rounded_red_button">#FF5733
+    </color> <!-- Example: Red for rounded red button background -->
+
+    <!-- Text colors -->
+    <color name="dark_gray">#555555</color> <!-- Example: Dark gray text color -->
+
+    <!-- Other custom colors -->
+    <color name="gold">#FFD700</color> <!-- Example: Gold color for rating progress tint -->
+
+</resources>

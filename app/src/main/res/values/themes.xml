@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BlueButtonTheme" parent="@style/AppTheme">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="backgroundColor">@color/colorPrimary</item>
+        <item name="background">@color/colorPrimary</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:disabledAlpha">1</item>
+        <!-- button text color-->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="WhiteButtonTheme" parent="@style/AppTheme">
+        <item name="background">@drawable/rectangle</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:disabledAlpha">1</item>
+        <!-- button text color-->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HeadingTextTheme" parent="@style/AppTheme">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

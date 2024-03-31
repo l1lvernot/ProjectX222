@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjectX</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_todo">TODO</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="get_started">Get Started</string>
+    <string name="email_hint">Email Address</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_picture">Profile Picture</string>
+</resources>
