@@ -243,8 +243,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     loginUser(email, password);
                 } else {
                     captchaEditText.setError("Wrong captcha");
-                }
-            } else {
+                } }
+             else {
                 if (!Utils.validateEmail(email))
                     emailEditText.setError("Invalid Email");
                 else if (!Utils.validatePassword(password))

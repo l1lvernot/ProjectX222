@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "253229113543",
-    "project_id": "projectx-3b644",
-    "storage_bucket": "projectx-3b644.appspot.com"
+    "project_number": "542155969235",
+    "project_id": "project-x-top",
+    "storage_bucket": "project-x-top.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:253229113543:android:3abbc48cf121247f951ee2",
+        "mobilesdk_app_id": "1:542155969235:android:e93e3ed71c07a3ef9f7a26",
         "android_client_info": {
           "package_name": "com.example.projectx"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyByOqeiJpvlpkrK0DCXld_LoDP0lWSJvAk"
+          "current_key": "AIzaSyCRD_ENFq2QCmSFBUxxi495QrLScx7Hjdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542155969235:android:2c7ef71020774dc39f7a26",
+        "android_client_info": {
+          "package_name": "com.example.projectx.ui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRD_ENFq2QCmSFBUxxi495QrLScx7Hjdc"
         }
       ],
       "services": {

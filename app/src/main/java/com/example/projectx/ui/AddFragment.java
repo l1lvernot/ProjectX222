@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.projectx.R;
 import com.example.projectx.remote.models.Party;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -21,6 +22,8 @@ public class AddFragment extends Fragment {
 
     private EditText partyTitleEditText, partyDetailsEditText, longitudeEditText, latitudeEditText, addressEditText, timeEditText;
     private Button addPartyButton;
+
+    private FirebaseAuth mAuth;
 
     private DatabaseReference partyRef;
 
@@ -40,6 +43,7 @@ public class AddFragment extends Fragment {
         addPartyButton.setOnClickListener(v -> addParty());
 
         partyRef = FirebaseDatabase.getInstance().getReference().child("parties");
+        mAuth = FirebaseAuth.getInstance();
 
         return rootView;
     }
@@ -51,6 +55,7 @@ public class AddFragment extends Fragment {
         Double latitude = Double.parseDouble(latitudeEditText.getText().toString().trim());
         String address = addressEditText.getText().toString().trim();
         String time = timeEditText.getText().toString().trim();
+        String uid = mAuth.getCurrentUser().getUid();
 
         // Validate input fields
         if (partyTitle.isEmpty() || partyDetails.isEmpty() || address.isEmpty() || time.isEmpty()) {
@@ -60,6 +65,7 @@ public class AddFragment extends Fragment {
 
         // Assuming you have a Party class to represent party details
         Party party = new Party(partyTitle, partyDetails, longitude, latitude, address, time);
+        partyRef.setValue(party);
 
         // Generate a unique key for the party
         String partyId = partyRef.push().getKey();
